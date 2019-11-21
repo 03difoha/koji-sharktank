@@ -18,16 +18,17 @@ function setup() {
 
     s = new Shark(0, 0)
 
-    for (let i = 0; i < 20; i++) {
-        fishes1[i] = new Fish('regular', windowWidth, random(height), fish1Img, [0.2, 3])
+    for (let i = 0; i < 10; i++) {
+        fishes1[i] = new regularFish(windowWidth, random(height), fish1Img)
+
     }
 
-    for (let i = 0; i < 8; i++) {
-        fishes1[i] = new Fish('large', windowWidth, random(height), fish2Img, [3, 5])
+    for (let i = 0; i < 5; i++) {
+        fishes1[i] = new largeFish(windowWidth, random(height), fish2Img)
     }
 
-    for (let i = 0; i < 3; i++) {
-        fishes1[i] = new Fish('poison', windowWidth, random(height), fish3Img, [3, 10])
+    for (let i = 0; i < 2; i++) {
+        fishes1[i] = new poisonFish(windowWidth, random(height), fish3Img)
     }
 
 
